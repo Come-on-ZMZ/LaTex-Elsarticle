@@ -1,0 +1,131 @@
+\documentclass[final,5p,times,twocolumn,authoryear]{elsarticle}
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=cyan]{hyperref}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{lineno}
+
+\journal{Computers and Electronics in Agriculture}
+
+\begin{document}
+\begin{frontmatter}
+
+%% Title, authors and addresses
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for theassociated footnote;
+%% use the ead command for the email address.
+
+%% \author{Name\corref{cor1}}
+%% \ead{email address}
+%% \cortext[cor1]{}
+%% \affiliation{organization={},
+%%            addressline={}, 
+%%            city={},
+%%            postcode={}, 
+%%            state={},
+%%            country={}}
+
+\title{Title}
+
+\author[1,2,3]{12}
+%\ead{}
+
+\author[1,2]{11 \corref{cor1}}
+\ead{}
+
+\author[1,2]{22 \corref{cor1}}
+\ead{}
+
+
+\affiliation[1]{organization={Research Center},
+	city={Beijing},
+	postcode={100000},
+	%state={},
+	country={China}}
+	
+\affiliation[2]{organization={Research Institute},
+	city={Nanjing},
+	postcode={210000},
+	state={Jiangsu Province},
+	country={China}}
+	
+\affiliation[3]{organization={Agricultural Engineering},
+	city={Zhenjiang},
+	postcode={212013},
+	state={Jiangsu Province},
+	country={China}}
+
+\cortext[cor1]{Corresponding author: 11, 22.}
+
+\begin{abstract}
+Abstract text.
+\end{abstract}
+
+\begin{keyword}
+keyword1 \sep keyword2
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\section{Section}
+\label{sec1}
+Section See Subsection \ref{subsec1}.
+
+\subsection{Example Subsection}
+\label{subsec1}
+
+Subsection text.
+
+% Use \subsubsection, \paragraph, \subparagraph commands to start 3rd, 4th and 5th level sections.
+
+\begin{equation}
+f(x) = (x+a)(x+b)
+\end{equation}
+
+\begin{align}
+ f(x) &= (x+a)(x+b) \\
+      &= x^2 + (a+b)x + ab
+\end{align}
+
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{l c r}
+  1 & 2 & 3 \\ 
+  4 & 5 & 6 \\
+  7 & 8 & 9 \\
+\end{tabular}
+\caption{Table Caption}
+\label{tab1}
+\end{table}
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=1.0\linewidth]{example-image-a}
+\caption{Figure Caption}\label{fig1}
+\end{figure}
+
+\appendix
+\section{Example Appendix Section}
+\label{app1}
+
+Appendix text.
+
+Example citation, See \cite{chang2014delineation}.
+
+\section*{Declaration of competing interest}
+
+
+\section*{Acknowledgments}
+
+\bibliographystyle{elsarticle-harv}
+\bibliography{ref}
+
+\end{document}
+\endinput
+
+
+
